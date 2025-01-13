@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+  
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 47.9 95.8% 53.1%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 47.9 95.8% 53.1%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 35.5 91.7% 32.9%;
+  }
+}
+
+
+
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+html, body, :root{
+  height: 100%;
+}
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* MOBILE TEMPLATE DESIGN  */
+.container{
+  max-width: 600px;
+  margin: 4px auto;
+}
+
+.phone{
+  position: relative;
+  background: #1e1e1e;
+  height: 625px;
+  width: 345px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.camera{
+  position: absolute;
+  background: #7A7A7A;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  top: 7px;
+  left: 166px;
+  z-index: +9;
+}
+
+.speaker{
+  position: absolute;
+  background: #000;
+  height: 23px;
+  width: 45px;
+  border-radius: 0 0 27px 27px;
+  top: 7px;
+  left: 151px;
+  z-index: +8;
+}
+
+.sleep-button{
+  position: absolute;
+  background: #1e1e1e;
+  height: 35px; 
+  width: 3px;
+  border-top-right-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+  top: 111px;
+  left: 345px;
+}
+
+.silent-switch{
+  position: absolute;
+  background: #1e1e1e;
+  height: 25px;
+  width: 3px;
+  border-top-left-radius: 3px 3px;
+  border-bottom-left-radius: 3px 3px;
+  top: 60px;
+  left: -3px;
+}
+
+.volume{
+  position: absolute;
+  background: #1e1e1e;
+  width: 3px;
+  height: 35px;
+  border-top-left-radius: 3px 3px;
+  border-bottom-left-radius: 3px 3px;
+  left: -3px;
+}
+
+.up{
+  top: 105px;
+}
+
+.down{
+  top: 145px;
+}
+
+.screen{
+  position: absolute;
+  overflow: hidden;
+  height: 593px;
+  width: 325px;
+  top: 10px;
+  left: 10px; 
+  border-radius: 15px;
+}
+
+.home-button{
+  position: absolute;
+  border: 1px solid #7A7A7A;
+  height: 35px;
+  width: 35px;
+  border-radius: 25px;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -18px;
+  display: none;
+}
+
+
